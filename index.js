@@ -13,7 +13,7 @@ app.use(express.json()) //Nos permite utilizar json y hacer que el sv entienda e
 app.use(express.urlencoded({extended:false})) //es un método incorporado en Express para reconocer el objeto de solicitud entrante como cadenas o matrices
 
 //Routes
-app.get(require('./src/routes/route'))
+app.use(require('./src/routes/route'))
 
 
 //localhost:3000 => Para escuchar ver si funca el server.
